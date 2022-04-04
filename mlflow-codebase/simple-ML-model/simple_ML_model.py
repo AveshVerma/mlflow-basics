@@ -50,7 +50,7 @@ def main(alpha, l1_ratio):
 
         rmse, mae, r2 = evaluate(test_y, pred)
         print(f"ElasticNet parameters: alpha: {alpha}, l1_ratio: {l1_ratio}")
-        print(f"ElasticNet metrics: rmse: {rmse}, mae: {mae}, r2_score: {r2_score}")
+        print(f"ElasticNet metrics: rmse: {rmse}, mae: {mae}, r2_score: {r2}")
 
         mlflow.log_param("alpha", alpha)
         mlflow.log_param("l1_ratio", l1_ratio)
